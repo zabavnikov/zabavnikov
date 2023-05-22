@@ -1,7 +1,5 @@
 ### Welcome to my github page 👋
 
-### 🛠 &nbsp;Tech Stack
-
 ##### 👩‍💻 Languages
 ![PHP](https://img.shields.io/badge/-PHP-7a86b8?style=flat&logo=PHP&logoColor=white)&nbsp;
 ![JavaScript](https://img.shields.io/badge/-JavaScript-f8e01e?style=flat&logo=javascript&logoColor=white)&nbsp;
