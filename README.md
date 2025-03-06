@@ -6,6 +6,7 @@
 ![HTML](https://img.shields.io/badge/-HTML-e44d26?style=flat&logo=HTML5&logoColor=white)&nbsp;
 ![CSS](https://img.shields.io/badge/-CSS-214ce5?style=flat&logo=CSS3&logoColor=white)&nbsp;
 ![SCSS](https://img.shields.io/badge/-SCSS-cd6799?style=flat&logo=Sass&logoColor=white)&nbsp;
+![TypeScript](https://img.shields.io/badge/-TypeScript-cd6799?style=flat&logo=TypeScript&logoColor=white)&nbsp;
 
 ##### 🚀 Frameworks
 ![Laravel](https://img.shields.io/badge/Laravel-ff2d20?style=flat&logo=laravel&logoColor=white)&nbsp;
