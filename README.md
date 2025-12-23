@@ -8,11 +8,11 @@
 
 ## Последние запросы на слияние
 <!-- PR-LIST:START -->
-- [zabavnikov pushed zabavnikov](https://github.com/zabavnikov/zabavnikov/compare/5125a823f6...8f35c821eb)
-- [zabavnikov pushed zabavnikov](https://github.com/zabavnikov/zabavnikov/compare/9c33e1c8e7...5125a823f6)
-- [zabavnikov pushed zabavnikov](https://github.com/zabavnikov/zabavnikov/compare/927f44dd71...9c33e1c8e7)
-- [zabavnikov pushed zabavnikov](https://github.com/zabavnikov/zabavnikov/compare/3777f5044a...927f44dd71)
-- [zabavnikov pushed zabavnikov](https://github.com/zabavnikov/zabavnikov/compare/0232f424ca...3777f5044a)
+- 🔀 [Update useUrqlClient.ts](https://github.com/gbicou/nuxt-urql/pull/370)
+- 🔀 [Исправляет опечатку в статье о промисах.](https://github.com/doka-guide/content/pull/5504)
+- 🔀 [Add missing ruRU translations](https://github.com/tusen-ai/naive-ui/pull/5163)
+- 🔀 [refactor: fix typo in database config stub](https://github.com/adonisjs/lucid/pull/523)
+- 🔀 [Поправил ошибки в тексте :)](https://github.com/Intecmedia/Intecmedia.Webpack/pull/1)
 <!-- PR-LIST:END -->
 
 
