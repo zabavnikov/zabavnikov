@@ -6,4 +6,8 @@
   <img src="https://skillicons.dev/icons?i=js,typescript,html,css,scss,vue,nuxtjs,tailwind,vite,bun,figma,laravel,graphql,phpstorm,docker" width="480px" />
 </p>
 
+## Последние запросы на слияние
+<!-- PR-LIST:START -->
+<!-- PR-LIST:END -->
+
 
