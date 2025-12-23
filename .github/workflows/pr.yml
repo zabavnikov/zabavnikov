@@ -1,14 +1,47 @@
-name: Update PRs
+name: Update OSS PRs
+
 on:
   workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: gautamkrishnar/blog-post-workflow@v1
+
+      - name: Fetch PRs
+        uses: actions/github-script@v7
         with:
-          comment_tag_name: "PR-LIST"
-          feed_list: "https://github.com/zabavnikov.atom"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const username = 'zabavnikov'
+
+            const { data } = await github.rest.search.issuesAndPullRequests({
+              q: `is:pr author:${username} is:merged -user:${username}`,
+              sort: 'updated',
+              order: 'desc',
+              per_page: 5
+            })
+
+            const prs = data.items
+              .map(pr => `- 🔀 [${pr.title}](${pr.html_url})`)
+              .join('\n')
+
+            const fs = require('fs')
+            const readme = fs.readFileSync('README.md', 'utf8')
+
+            const updated = readme.replace(
+              /<!-- PR-LIST:START -->([\s\S]*?)<!-- PR-LIST:END -->/,
+              `<!-- PR-LIST:START -->\n${prs}\n<!-- PR-LIST:END -->`
+            )
+
+            fs.writeFileSync('README.md', updated)
+
+      - name: Commit changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -am "Update OSS PR list" || exit 0
+          git push
