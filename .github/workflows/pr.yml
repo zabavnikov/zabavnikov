@@ -1,0 +1,13 @@
+name: Update PRs
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          comment_tag_name: "PR-LIST"
+          feed_list: "https://github.com/zabavnikov.atom"
